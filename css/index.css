@@ -1,0 +1,38 @@
+body {
+    padding-top: 25px;
+    font-family: 'Muli', sans-serif;
+}
+
+h2, h4 {
+    font-style: italic;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.avatar {
+    float: left;
+}
+
+.avatar > img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #6bbf27;
+}
+
+.info-block {
+    border-top: 3px solid #6bbf27;
+    margin-top: 20px;
+}
+
+.info-block .info-block-title {
+    padding-top: 10px;
+}
+
+
+.pos-name a {
+    color: #aabf00;
+    text-decoration: underline;
+    font-style: italic;
+}
