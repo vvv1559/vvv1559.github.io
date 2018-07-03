@@ -31,8 +31,12 @@ h2, h4 {
 }
 
 
-.pos-name a {
+.left-cv-column a {
     color: #aabf00;
     text-decoration: underline;
     font-style: italic;
+}
+
+.cv-row {
+    padding-bottom: 25px;
 }
