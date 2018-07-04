@@ -40,3 +40,8 @@ h2, h4 {
 .cv-row {
     padding-bottom: 25px;
 }
+
+#phone.hidden {
+    color: gray;
+    font-style: italic;
+}
