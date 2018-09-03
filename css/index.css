@@ -7,6 +7,11 @@ h2, h4 {
     font-style: italic;
 }
 
+.tech-stack {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .content {
     max-width: 800px;
 }
@@ -38,7 +43,8 @@ h2, h4 {
 }
 
 .cv-row {
-    padding-bottom: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #6bbf27;
 }
 
 #phone.hidden {
