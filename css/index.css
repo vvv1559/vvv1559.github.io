@@ -3,7 +3,15 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-.common h2 {
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.summary {
+    margin-bottom: 15px;
+}
+
+.centered {
     text-align: center;
 }
 
@@ -21,17 +29,6 @@ h2, h4 {
     max-width: 1000px;
 }
 
-.avatar {
-    float: left;
-    margin: 10px 15%;
-}
-
-.avatar > img {
-    max-width: 100%;
-    max-height: 100%;
-    border: 3px solid #6bbf27;
-}
-
 .info-block .info-block-title {
     padding-top: 10px;
     text-align: center;
@@ -39,6 +36,10 @@ h2, h4 {
 
 .left-cv-column {
     background-color: #ecf9e2;
+}
+
+.left-cv-column h5 {
+    margin-top: 20px;
 }
 
 .left-cv-column a {
