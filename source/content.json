@@ -77,7 +77,10 @@
         "Bash"
       ],
       "description": [
-        "As a lead of development team I worked on ETL processes."
+        "As a team lead, I was working on the organisation of the development inside of the team: setting up the road map, defining priorities (collaborative with the product manager), helping the team to get answers on the questions. As a part of my work, I had 1 on 1 meeting with my teammates to help them with problems, questions and planning their development and grows.",
+        "As a lead engineer, I participated in cross-team activities, such as: defining the common frameworks, code-styles, review proposals of new services, mentoring and training of developers.",
+        "As a developer, I analyzed and set up the architecture of a new solution for integration with a European trains provider. This helped our company significantly improve the coverage of train trips for our customers. As a result, we got an effective and scalable solution, with the highest test coverage in the company.",
+        "As a developer, I analyzed and implemented the framework for the integration of company infrastructure with 3rd party HR management systems. Based on this framework my teammates were able to implement new integrations in a short period (a few days)."
       ]
     },
     {
@@ -128,7 +131,6 @@
         "Took a main part in the planing and development of high loaded service (more than 160 millions events per day). Main goals of this service are: collect, transform and store statistic information about music streams from services such as: Spotify, Apple music, Google music, Amazon music and more; and provide access to this information to our costumers and other parts of company.",
         "As a developer, I analysed problems and implemented important changes to our processing tools. Current solution is helps to our customers to get information 100 times faster with 5 times less resources consumption.",
         "As a developer, made refactoring of legacy code and tuned processing infrastructure. Those changes increased processing capacity at least 4 times.",
-        "Most important part of my work is discussion with product owners and customer's support, give answers for questions, solve customers problems and collect information about customers needs. And, as a next step, conversion of this information to tasks and discussions with my teammates",
         "As a teammate I took a responsibility for processes of task management, pre-production testing and production deployments."
       ]
     },
@@ -210,7 +212,6 @@
       "description": [
         "I was a part of the development team. Our team was involved in development of accounting service for trade acquiring.",
         "With a cross-functional team, I took the main part in planing, analyze and implementation of tools for migrating existing data from the format of the legacy system. This work gave me a unique experience to work with people from an \"obsolete system\".",
-        "I suggested and we implemented with my colleagues a lot of optimizations and automatization that helped to deliver our product faster with low latency. For example service for quick deploying test environments, as well as migrating data to a new kernel version with minimal human involvement.",
         "I took a part in the development of integration solutions (API) using XML (DOM / SAX) / XSD / JSON and user interface on the XML-based framework of the bank."
       ]
     },
@@ -247,7 +248,6 @@
       "description": [
         "In expert position, I was a part of the team for the development and support of the ERP-system for organizing and planning works, as well as accounting for material resources.",
         "Took a part in the planning, development, analysis of requirements as well as testing business logic. Worked in direct dialogue with key users and business customers.",
-        "I took the main part in the implementation of integrations with third-party systems through REST-API, as well as T-SQL scripts with scheduled work or events. This helped a company to make organization changes more soft and clear. Also, it helped to collaborate powers of separate application into a single effective solution.",
         "I implemented tools for asynchronous SMS notification, by implementing the SMPP-protocol specification in C# and Java. This helped to give our users more effective communication and notification about work statuses.",
         "With team support I refactored the integration procedures in the T-SQL language, increasing their performance several times and reducing the number of errors. This helped to increase the efficiency of exchange between material and financial accounting systems."
       ]
