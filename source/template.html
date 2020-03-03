@@ -1,0 +1,166 @@
+<!doctype html>
+
+<!-- 
+  This page was auto-generated from the template
+  You can find source code in my GitHub repository https://github.com/vvv1559/vvv1559.github.io 
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ name }} CV">
+    <meta property="og:image" content="img/cv_avatar.png">
+    <meta property="og:site_name" content="{{ name }} CV">
+    <meta property="og:type" content="CV">
+    <meta property="og:title" content="{{ name }} CV">
+    <meta property="og:url" content="https://vvv1559.github.io">
+    <meta property="og:description" content="{{ name }} CV">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+
+    <title>{{ name }}</title>
+  </head>
+
+  <body>
+    <div class="container-fluid content">
+      <div class="row cv-row">
+        <div class="col-md-4 left-cv-column col">
+          <h5>Contacts:</h5>
+          {% for contact in contacts %}
+          <strong>{{ contact.label }}: </strong>
+          {% if contact.link %}
+          <a href="{{ contact.link }}" target="_blank">{{ contact.data }}</a>
+          {% else %}
+          {{ contact.data }}
+          {% endif %}
+          <br /> {% endfor %}
+          <h5>Social links:</h5>
+          {% for link in links %}
+          <a href="{{ link.link }}" target="_blank">{{ link.type }}</a><br />
+          {% endfor %}
+          <h5>Languages:</h5>
+          {% for language in languages %}
+          {{ language.language }} ({{ language.level }})<br />
+          {% endfor %}
+        </div>
+        <div class="col-md-8 common">
+          <h3 class="text-uppercase">{{ name }}</h3>
+          {% for position in positions %}
+          <h1>{{ position }}</h1>
+          {% endfor %}
+          <div class="centered"><strong><i>{{ limitations }}</i></strong></div>
+          <br>
+          <div class="summary text-justify">{{ summary }}</div>
+        </div>
+      </div>
+
+      <div class="experience-block info-block">
+        <div class="row">
+          <div class="col-md-4 left-cv-column"></div>
+          <div class="col-md-8 info-block-title">
+            <h4>EXPERIENCE</h4>
+          </div>
+        </div>
+        {% for exp_item in experience %}
+        <div class="row cv-row">
+          <div class="col-md-4 left-cv-column">
+            <p>
+              <strong>
+                <a href="{{ exp_item.company.website }}" target="_blank">
+                  <i class="material-icons">open_in_new</i>
+                </a>{{ exp_item.company.name }} ({{ exp_item.total_duration }})
+              </strong>
+              <br />
+              <span class="padded"><i class="material-icons">room</i>{{ exp_item.company.location }}</span>
+            </p>
+            <p>
+              {% for pos_item in exp_item.positions %}
+
+              {% if loop.first and not loop.last %} <i class="material-icons">arrow_forward</i>
+              {% elif not loop.last %} <i class="material-icons">done</i>
+              {% elif pos_item.end == 'Present' %} <i class="material-icons">emoji_flags</i>
+              {% else %}<i class="material-icons">done_all</i>
+              {% endif %}
+
+              <strong>{{ pos_item.title }}</strong><br>
+              <span class="padded pos-date">
+                <i class="material-icons">access_time</i>
+                {{ pos_item.start }} - {{ pos_item.end }} ({{ pos_item.duration }})
+              </span>
+              {% endfor %}
+            </p>
+            <p>
+              <i class="material-icons">build</i>Technology stack:<br>
+              <span class="padded">{{ exp_item.technologies }}</span>
+            </p>
+          </div>
+          <div class="col-md-8 text-justify right-cv-column">
+            {% for desc_line in exp_item.description %}
+            <p>{{ desc_line }}</p>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="education-block info-block">
+        <div class="row">
+          <div class="col-md-4 left-cv-column"></div>
+          <div class="col-md-8 info-block-title">
+            <h4>EDUCATION</h4>
+          </div>
+        </div>
+        {% for ed_row in education %}
+        <div class="row cv-row">
+          <div class="col-md-4 left-cv-column">
+            <strong>{{ ed_row.period }}</strong>
+          </div>
+          <div class="col-md-8 text-justify right-cv-column">
+            {{ ed_row.description }}
+          </div>
+        </div>
+        {% endfor %}
+        <div class="sertification-block info-block">
+          <div class="row">
+            <div class="col-md-4 left-cv-column"></div>
+            <div class="col-md-8 info-block-title">
+              <h4>DIGITAL SERTIFICATION</h4>
+            </div>
+          </div>
+          {% for cert_row in certification %}
+          <div class="row cv-row">
+            <div class="col-md-4 left-cv-column">
+              <strong>{{ cert_row.period }}</strong>
+            </div>
+            <div class="col-md-8 text-justify right-cv-column">
+              {{ cert_row.description }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="print-button d-print-none centered">
+        <a class="btn btn-lg btn-outline-success" href="/{{ name }}.pdf" target="_blank">
+          <i class="material-icons hidden-print">save</i>
+        </a>
+      </div>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135205191-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135205191-1');
+      </script>
+  </body>
+
+</html>

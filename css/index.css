@@ -3,7 +3,12 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
 }
 
@@ -15,8 +20,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-h2, h4 {
-    padding-top: 15px;
+h2,
+h4 {
+    padding-top: 5px;
     font-style: italic;
 }
 
@@ -30,11 +36,11 @@ h2, h4 {
 }
 
 .info-block .info-block-title {
-    padding-top: 10px;
     text-align: center;
 }
 
 .left-cv-column {
+    padding-top: 10px;
     background-color: #ecf9e2;
 }
 
@@ -48,11 +54,30 @@ h2, h4 {
     font-style: italic;
 }
 
-.cv-row {
-    border-bottom: 1px dotted #6bbf27;
+.right-cv-column {
+    padding-top: 10px;
 }
 
-#phone.hidden {
-    color: gray;
+.cv-row {
+    border-bottom: 1px dotted #6bbf27;
+    padding-bottom: 2px;
+}
+
+.material-icons {
+    font-size: medium;
+}
+
+.pos-date {
     font-style: italic;
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+.padded {
+    display: block;
+    padding-left: 18px;
+}
+
+.print-button {
+    padding-top: 10px;
 }

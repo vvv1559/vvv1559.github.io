@@ -1,0 +1,282 @@
+{
+  "name": "Vlad Vinogradov",
+  "positions": [
+    "Lead Software Developer",
+    "Team Lead"
+  ],
+  "limitations": "Require Visa Sponsorship",
+  "contacts": [
+    {
+      "type": "mobile",
+      "contact": "+31 (6) 57 47 72 18"
+    },
+    {
+      "type": "email",
+      "contact": "want.work.with.you@gmail.com"
+    },
+    {
+      "type": "skype",
+      "contact": "verwolf85"
+    },
+    {
+      "type": "location",
+      "contact": "Almere stad, Netherlands"
+    }
+  ],
+  "links": [
+    {
+      "type": "LinkedIn",
+      "link": "https://www.linkedin.com/in/vvv1559"
+    },
+    {
+      "type": "GitHub",
+      "link": "https://github.com/vvv1559"
+    },
+    {
+      "type": "HackerRank",
+      "link": "https://www.hackerrank.com/vvv1559"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Russian",
+      "level": "Native"
+    }
+  ],
+  "summary": "Professional with 10+ years of experience. Skilled for the whole development cycle: analytics, backend, frontend and infrastructure development, maintenance and user support. Accomplished and innovative professional with the ability to collaborate with colleagues across multiple business areas to ensure products align with requirements and expectations. With a strong DevOps and Agile mindset. Able to provide mentoring to developers and other team members on best practices, programming languages, development frameworks, services, and technologies. Communicable, with a keen responsibility sense and passion for self-education.",
+  "experience": [
+    {
+      "positions": [
+        {
+          "title": "Software developer",
+          "start": "2019-07",
+          "end": null
+        }
+      ],
+      "company": {
+        "name": "TripActions",
+        "website": "https://tripactions.com",
+        "location": "Amsterdam, Netherlands"
+      },
+      "technologies": [
+        "Java 8",
+        "Spring Boot",
+        "Hibernate",
+        "Mockito",
+        "JUnit",
+        "Maven",
+        "Docker",
+        "Apache Kafka",
+        "MySql",
+        "Jenkins",
+        "Linux",
+        "Bash"
+      ],
+      "description": [
+        "As a lead of development team I worked on ETL processes."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Middle Software Developer",
+          "start": "2018-05",
+          "end": "2018-12"
+        },
+        {
+          "title": "Senior Software Developer",
+          "start": "2018-12",
+          "end": "2019-05"
+        },
+        {
+          "title": "Development Team Lead",
+          "start": "2019-05",
+          "end": "2019-07"
+        }
+      ],
+      "company": {
+        "name": "Fuga Music",
+        "website": "https://www.fuga.com",
+        "location": "Amsterdam, Netherlands"
+      },
+      "technologies": [
+        "Java 8",
+        "Spring Boot",
+        "Hibernate",
+        "Mockito",
+        "JUnit",
+        "Maven",
+        "Gradle",
+        "Ruby",
+        "Bundler",
+        "Rspec",
+        "Docker",
+        "Apache ZooKeeper",
+        "Apache Kafka",
+        "MySql",
+        "Google BigQuery",
+        "Jenkins",
+        "Linux",
+        "Bash"
+      ],
+      "description": [
+        "As a lead of development team I worked on ETL processes.",
+        "Took a main part in the planing and development of high loaded service (more than 160 millions events per day). Main goals of this service are: collect, transform and store statistic information about music streams from services such as: Spotify, Apple music, Google music, Amazon music and more; and provide access to this information to our costumers and other parts of company.",
+        "As a developer, I analysed problems and implemented important changes to our processing tools. Current solution is helps to our customers to get information 100 times faster with 5 times less resources consumption.",
+        "As a developer, made refactoring of legacy code and tuned processing infrastructure. Those changes increased processing capacity at least 4 times.",
+        "Most important part of my work is discussion with product owners and customer's support, give answers for questions, solve customers problems and collect information about customers needs. And, as a next step, conversion of this information to tasks and discussions with my teammates",
+        "As a teammate I took a responsibility for processes of task management, pre-production testing and production deployments."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Software developer",
+          "start": "2016-10",
+          "end": "2018-05"
+        }
+      ],
+      "company": {
+        "name": "Yandex",
+        "website": "https://www.yandex.com",
+        "location": "Moscow, Russia"
+      },
+      "technologies": [
+        "Java 8",
+        "Spring Core",
+        "Spring MVC",
+        "Spring Security",
+        "Mockito",
+        "JUnit",
+        "React JS",
+        "Redux",
+        "Node.js",
+        "Npm",
+        "Mocha",
+        "Python",
+        "Pip",
+        "Apache ZooKeeper",
+        "Docker",
+        "MongoDB",
+        "ClickHouse",
+        "Oracle DB",
+        "Gradle",
+        "Maven",
+        "Teamcity",
+        "Jenkins",
+        "Linux",
+        "Bash"
+      ],
+      "description": [
+        "As a part of the development team, I took apart in the development and support of Yandex.Market billing and infrastructure products.",
+        "With a team, I took a part in the planning, support, optimization, and development of a high-loaded (500 thousand lines of logs per second, 1.5 million metrics per minute), geographically distributed complex of services. The main goal of service is collecting, parsing the application's logs and building metrics based on this data. This service helps all teams of the company to watch and monitor states of applications, makes releases safer, gives tools for A/B tests monitoring and more.",
+        "I took the main part in the collection of requirements and implementation of development tools. Those tools made the development and maintenance of application in a unified way. Also, they helped to make releases of new applications more faster, reduced complexity of application maintenance and helped to create another toolset for creating CI / CD processes by \"1-click\"",
+        "With a team, I took part in the development of a complex of services for administrating applications and managing their CI / CD processes. I took the main part in the implementation of the subsystem for accounting components and resources. I started a history of the common library of React components for our front-end part. This helped to speed up development and make a solid interface.",
+        "I took a part in the development of the open-source component \"Graphouse\". This component allows to use the ClickHouse database as a metric data storage system for Graphite. In the end, people can build very powerful and effective systems for time-series data with the graphite-API for data representation.",
+        "With another team I took a part in the development of a high-loaded, distributed billing system for the marketplace with more than 18 millions users per month."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Middle Engineer",
+          "start": "2016-05",
+          "end": "2016-10"
+        }
+      ],
+      "company": {
+        "name": "SberBank Technology",
+        "website": "https://www.sber-tech.com",
+        "location": "Moscow, Russia"
+      },
+      "technologies": [
+        "Java 8",
+        "Java EE",
+        "Spring Core",
+        "JUnit",
+        "Maven",
+        "Python",
+        "Bash",
+        "IBM WebSphere",
+        "Oracle Linux",
+        "Oracle DB",
+        "Jenkins",
+        "Teamcity"
+      ],
+      "description": [
+        "I was a part of the development team. Our team was involved in development of accounting service for trade acquiring.",
+        "With a cross-functional team, I took the main part in planing, analyze and implementation of tools for migrating existing data from the format of the legacy system. This work gave me a unique experience to work with people from an \"obsolete system\".",
+        "I suggested and we implemented with my colleagues a lot of optimizations and automatization that helped to deliver our product faster with low latency. For example service for quick deploying test environments, as well as migrating data to a new kernel version with minimal human involvement.",
+        "I took a part in the development of integration solutions (API) using XML (DOM / SAX) / XSD / JSON and user interface on the XML-based framework of the bank."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Engineer-programmer",
+          "start": "2008-04",
+          "end": "2012-08"
+        },
+        {
+          "title": "Software Developer",
+          "start": "2012-08",
+          "end": "2013-04"
+        },
+        {
+          "title": "Senior Software Developer",
+          "start": "2013-04",
+          "end": "2016-05"
+        }
+      ],
+      "company": {
+        "name": "Vimpelcom (Beeline)",
+        "website": "www.veon.com",
+        "location": "Moscow, Russia"
+      },
+      "technologies": [
+        "1C: Enterprise 7.7, 8.2",
+        "MS-SQL",
+        "Oracle DB",
+        "Windows Server 2003 – 2008",
+        "Java 7"
+      ],
+      "description": [
+        "In expert position, I was a part of the team for the development and support of the ERP-system for organizing and planning works, as well as accounting for material resources.",
+        "Took a part in the planning, development, analysis of requirements as well as testing business logic. Worked in direct dialogue with key users and business customers.",
+        "I took the main part in the implementation of integrations with third-party systems through REST-API, as well as T-SQL scripts with scheduled work or events. This helped a company to make organization changes more soft and clear. Also, it helped to collaborate powers of separate application into a single effective solution.",
+        "I implemented tools for asynchronous SMS notification, by implementing the SMPP-protocol specification in C# and Java. This helped to give our users more effective communication and notification about work statuses.",
+        "With team support I refactored the integration procedures in the T-SQL language, increasing their performance several times and reducing the number of errors. This helped to increase the efficiency of exchange between material and financial accounting systems."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "start": "2014-11",
+      "end": "2019-06",
+      "description": "Tula State University; Electrification engineer; Tula, Russia"
+    },
+    {
+      "start": "1991-09",
+      "end": "2001-07",
+      "description": "Comprehensive (High) School #60; Tula, Russia"
+    }
+  ],
+  "certification": [
+    {
+      "year": "2017",
+      "description": "C++ White belt; The Complete React Native and Redux Course"
+    },
+    {
+      "year": "2016",
+      "description": "Algorithms and data structures; Web service development using Java (Level 1, 2); Functional programming using Haskell"
+    },
+    {
+      "year": "2015",
+      "description": "HTML5; Java SE"
+    }
+  ]
+}
