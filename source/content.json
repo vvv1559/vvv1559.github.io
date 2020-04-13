@@ -1,8 +1,7 @@
 {
   "name": "Vlad Vinogradov",
   "positions": [
-    "Lead Software Developer",
-    "Team Lead"
+    "Senior Software Developer"
   ],
   "limitations": "Require Visa Sponsorship",
   "contacts": [
@@ -63,7 +62,7 @@
         "location": "Amsterdam, Netherlands"
       },
       "technologies": [
-        "Java 8",
+        "Java 11",
         "Spring Boot",
         "Hibernate",
         "Mockito",
@@ -77,10 +76,10 @@
         "Bash"
       ],
       "description": [
-        "As a team lead, I was working on the organisation of the development inside of the team: setting up the road map, defining priorities (collaborative with the product manager), helping the team to get answers on the questions. As a part of my work, I had 1 on 1 meeting with my teammates to help them with problems, questions and planning their development and grows.",
-        "As a lead engineer, I participated in cross-team activities, such as: defining the common frameworks, code-styles, review proposals of new services, mentoring and training of developers.",
         "As a developer, I analyzed and set up the architecture of a new solution for integration with a European trains provider. This helped our company significantly improve the coverage of train trips for our customers. As a result, we got an effective and scalable solution, with the highest test coverage in the company.",
-        "As a developer, I analyzed and implemented the framework for the integration of company infrastructure with 3rd party HR management systems. Based on this framework my teammates were able to implement new integrations in a short period (a few days)."
+        "As a developer, I analyzed and implemented the framework for the integration of company infrastructure with 3rd party HR management systems. Based on this framework my teammates were able to implement new integrations in a short period (a few days).",
+        "As a lead engineer, I participated in cross-team activities, such as: defining the common frameworks, code-styles, review proposals of new services, mentoring and training of developers.",
+        "As a team lead, I was working on the organisation of the development inside of the team: setting up the road map, defining priorities (collaborative with the product manager), helping the team to get answers on the questions. As a part of my work, I had 1 on 1 meeting with my teammates to help them with problems, questions and planning their development and grows."
       ]
     },
     {
@@ -127,7 +126,6 @@
         "Bash"
       ],
       "description": [
-        "As a lead of development team I worked on ETL processes.",
         "Took a main part in the planing and development of high loaded service (more than 160 millions events per day). Main goals of this service are: collect, transform and store statistic information about music streams from services such as: Spotify, Apple music, Google music, Amazon music and more; and provide access to this information to our costumers and other parts of company.",
         "As a developer, I analysed problems and implemented important changes to our processing tools. Current solution is helps to our customers to get information 100 times faster with 5 times less resources consumption.",
         "As a developer, made refactoring of legacy code and tuned processing infrastructure. Those changes increased processing capacity at least 4 times.",
