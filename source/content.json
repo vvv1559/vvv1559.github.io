@@ -121,6 +121,7 @@
         "Apache Kafka",
         "MySql",
         "Google BigQuery",
+        "JavaScript/React",
         "Jenkins",
         "Linux",
         "Bash"
@@ -129,6 +130,7 @@
         "Took a main part in the planing and development of high loaded service (more than 160 millions events per day). Main goals of this service are: collect, transform and store statistic information about music streams from services such as: Spotify, Apple music, Google music, Amazon music and more; and provide access to this information to our costumers and other parts of company.",
         "As a developer, I analysed problems and implemented important changes to our processing tools. Current solution is helps to our customers to get information 100 times faster with 5 times less resources consumption.",
         "As a developer, made refactoring of legacy code and tuned processing infrastructure. Those changes increased processing capacity at least 4 times.",
+        "As a developer, I've created a simple proof-of-concept UI of the internal tool for the Customer support using ReactJs. This helped to our clients to have less problems and get the existing one fixed faster.",
         "As a teammate I took a responsibility for processes of task management, pre-production testing and production deployments."
       ]
     },
