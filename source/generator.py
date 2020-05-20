@@ -41,7 +41,7 @@ class Company:
 
 
 class Position:
-    def __init__(self, s_date, e_date, title, duration):
+    def __init__(self, s_date, e_date, title):
         super().__init__()
         self.start = _format_date(s_date)
 
@@ -51,7 +51,6 @@ class Position:
             self.end = 'Present'
 
         self.title = title
-        self.duration = duration
 
 
 class CvRow:
@@ -73,15 +72,32 @@ def _build_content():
         "name": data.get('name'),
         "positions": data.get('positions'),
         "limitations": data.get('limitations'),
-        "summary": data.get('summary'),
+        "summaries": data.get('summaries'),
         "contacts": _extract_contacts(data),
-        "links": data.get('links'),
+        "links": _extract_social_links(data),
         "languages": data.get('languages'),
         "experience": _extract_experience(data),
         "education": _extract_cv_row(data.get('education')),
         "certification": _extract_cv_row(data.get('certification')),
     }
     return content
+
+
+def _extract_social_links(content):
+    socials = []
+    for link in content.get('links'):
+        link_type = link.get('type')
+        socials.append({'label': link_type, 'link': link.get('link'), 'icon': _get_icon(link_type)})
+
+    return socials
+
+def _get_icon(contact_type):
+    if contact_type == 'LinkedIn':
+        return '/img/linked-in.png'
+    if contact_type == 'GitHub':
+        return '/img/git-hub.png'
+    if contact_type == 'HackerRank':
+        return '/img/hackerrank.png'
 
 
 def _extract_contacts(content):
@@ -107,55 +123,33 @@ def _extract_contacts(content):
     return contacts
 
 
+
 def _extract_experience(content):
     result = []
     for exp_item in content.get('experience'):
         positions = []
         sorted_pos = sorted(exp_item.get('positions'),
                             key=lambda pos: pos.get('start'))
-        last_i = len(sorted_pos) - 1
+
         for i, pos_item in enumerate(sorted_pos):
-            s_date, e_date, duration = _calc_duration(
-                pos_item.get('start'), pos_item.get('end')
-            )
-
-            if i == last_i:
-                duration += 1
-
-            positions.append(
-                Position(
-                    s_date, e_date,
-                    pos_item.get('title'),
-                    _format_duration(duration)
-                )
-            )
-        _, _, total_dur = _calc_duration(
-            sorted_pos[0].get('start'), sorted_pos[-1].get('end'))
+            positions.append(Position(
+                pos_item.get('start'),
+                pos_item.get('end'),
+                pos_item.get('title')
+            ))
 
         comp = exp_item.get('company')
 
+        l_pos = positions[len(sorted_pos) - 1]
         result.append({
-            'total_duration': _format_duration(total_dur + 1),
-            'positions': positions,
+            'title': l_pos.title,
+            'start': positions[0].start,
+            'end': l_pos.end,
             'company': Company(comp.get('name'), comp.get('website'), comp.get('location')),
             'technologies': ', '.join(exp_item.get('technologies')),
             'description': exp_item.get('description')
         })
     return result
-
-
-def _calc_duration(s_date, e_date, last_month_delta=0):
-    sp_date = _parse_date(s_date)
-    if not e_date:
-        delta_month = _to_month(datetime.datetime.now()) - _to_month(sp_date)
-        ep_date = None
-    else:
-        ep_date = _parse_date(e_date)
-        delta_month = _to_month(ep_date) - _to_month(sp_date)
-
-    delta_month += last_month_delta
-
-    return (sp_date, ep_date, delta_month)
 
 
 def _to_month(date):

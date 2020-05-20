@@ -19,7 +19,7 @@
     },
     {
       "type": "location",
-      "contact": "Almere stad, Netherlands"
+      "contact": "Almere, Netherlands"
     }
   ],
   "links": [
@@ -44,9 +44,18 @@
     {
       "language": "Russian",
       "level": "Native"
+    },
+    {
+      "language": "Dutch",
+      "level": "Beginner"
     }
   ],
-  "summary": "Professional with 10+ years of experience. Skilled for the whole development cycle: analytics, backend, frontend and infrastructure development, maintenance and user support. Accomplished and innovative professional with the ability to collaborate with colleagues across multiple business areas to ensure products align with requirements and expectations. With a strong DevOps and Agile mindset. Able to provide mentoring to developers and other team members on best practices, programming languages, development frameworks, services, and technologies. Communicable, with a keen responsibility sense and passion for self-education.",
+  "summaries": [
+    "Professional with more then 10 years of experience.",
+    "Skilled to collaborate with colleagues across multiple business areas to ensure products align with requirements and expectations.",
+    "Able to provide mentoring team members on best practices and technologies",
+    "Communicable, with a keen responsibility sense and passion for self-education"
+  ],
   "experience": [
     {
       "positions": [
@@ -59,7 +68,7 @@
       "company": {
         "name": "TripActions",
         "website": "https://tripactions.com",
-        "location": "Amsterdam, Netherlands"
+        "location": "Amsterdam"
       },
       "technologies": [
         "Java 11",
@@ -78,8 +87,7 @@
       "description": [
         "As a developer, I analyzed and set up the architecture of a new solution for integration with a European trains provider. This helped our company significantly improve the coverage of train trips for our customers. As a result, we got an effective and scalable solution, with the highest test coverage in the company.",
         "As a developer, I analyzed and implemented the framework for the integration of company infrastructure with 3rd party HR management systems. Based on this framework my teammates were able to implement new integrations in a short period (a few days).",
-        "As a lead engineer, I participated in cross-team activities, such as: defining the common frameworks, code-styles, review proposals of new services, mentoring and training of developers.",
-        "As a team lead, I was working on the organisation of the development inside of the team: setting up the road map, defining priorities (collaborative with the product manager), helping the team to get answers on the questions. As a part of my work, I had 1 on 1 meeting with my teammates to help them with problems, questions and planning their development and grows."
+        "As a team lead, I was working on the organisation of the development inside of the team: setting up the road map, defining priorities. As well, I helped my teammates with problems, questions and planning their professional grows."
       ]
     },
     {
@@ -103,7 +111,7 @@
       "company": {
         "name": "Fuga Music",
         "website": "https://www.fuga.com",
-        "location": "Amsterdam, Netherlands"
+        "location": "Amsterdam"
       },
       "technologies": [
         "Java 8",
@@ -114,10 +122,7 @@
         "Maven",
         "Gradle",
         "Ruby",
-        "Bundler",
-        "Rspec",
         "Docker",
-        "Apache ZooKeeper",
         "Apache Kafka",
         "MySql",
         "Google BigQuery",
@@ -127,11 +132,9 @@
         "Bash"
       ],
       "description": [
-        "Took a main part in the planing and development of high loaded service (more than 160 millions events per day). Main goals of this service are: collect, transform and store statistic information about music streams from services such as: Spotify, Apple music, Google music, Amazon music and more; and provide access to this information to our costumers and other parts of company.",
-        "As a developer, I analysed problems and implemented important changes to our processing tools. Current solution is helps to our customers to get information 100 times faster with 5 times less resources consumption.",
-        "As a developer, made refactoring of legacy code and tuned processing infrastructure. Those changes increased processing capacity at least 4 times.",
-        "As a developer, I've created a simple proof-of-concept UI of the internal tool for the Customer support using ReactJs. This helped to our clients to have less problems and get the existing one fixed faster.",
-        "As a teammate I took a responsibility for processes of task management, pre-production testing and production deployments."
+        "Took a main part in the planning and development of a high loaded service (more than 160 million events per day), that is responsible for information retrieving from the streaming services such as Spotify, Apple, Google, Amazon and more.",
+        "As a developer, I analyzed problems and implemented important changes to our processing tools. The current solution helps our customers to get information 100 times faster with 5 times fewer resources consumption.",
+        "As a developer, I made refactoring of legacy code and tuned processing infrastructure. Those changes increased processing capacity at least 4 times."
       ]
     },
     {
@@ -145,22 +148,16 @@
       "company": {
         "name": "Yandex",
         "website": "https://www.yandex.com",
-        "location": "Moscow, Russia"
+        "location": "Moscow"
       },
       "technologies": [
         "Java 8",
         "Spring Core",
         "Spring MVC",
-        "Spring Security",
         "Mockito",
         "JUnit",
         "React JS",
-        "Redux",
-        "Node.js",
-        "Npm",
-        "Mocha",
         "Python",
-        "Pip",
         "Apache ZooKeeper",
         "Docker",
         "MongoDB",
@@ -169,17 +166,13 @@
         "Gradle",
         "Maven",
         "Teamcity",
-        "Jenkins",
         "Linux",
         "Bash"
       ],
       "description": [
-        "As a part of the development team, I took apart in the development and support of Yandex.Market billing and infrastructure products.",
-        "With a team, I took a part in the planning, support, optimization, and development of a high-loaded (500 thousand lines of logs per second, 1.5 million metrics per minute), geographically distributed complex of services. The main goal of service is collecting, parsing the application's logs and building metrics based on this data. This service helps all teams of the company to watch and monitor states of applications, makes releases safer, gives tools for A/B tests monitoring and more.",
-        "I took the main part in the collection of requirements and implementation of development tools. Those tools made the development and maintenance of application in a unified way. Also, they helped to make releases of new applications more faster, reduced complexity of application maintenance and helped to create another toolset for creating CI / CD processes by \"1-click\"",
-        "With a team, I took part in the development of a complex of services for administrating applications and managing their CI / CD processes. I took the main part in the implementation of the subsystem for accounting components and resources. I started a history of the common library of React components for our front-end part. This helped to speed up development and make a solid interface.",
-        "I took a part in the development of the open-source component \"Graphouse\". This component allows to use the ClickHouse database as a metric data storage system for Graphite. In the end, people can build very powerful and effective systems for time-series data with the graphite-API for data representation.",
-        "With another team I took a part in the development of a high-loaded, distributed billing system for the marketplace with more than 18 millions users per month."
+        "With a team, I took a part in the planning, support, optimization, and development of a high-loaded (500 thousand lines of logs per second, 1.5 million metrics per minute), geographically distributed complex of services, that is responsible for collecting, parsing the application's logs and building metrics based on this data. This service helps all teams of the company to watch and monitor states of applications, makes releases safer, gives tools for A/B tests monitoring and more.",
+        "I took the main part in the collection of requirements and implementation of development tools to make the development and maintenance of application in a unified way. Also, they helped to make releases of new applications faster, reduced complexity of application maintenance and helped to create another toolset for setting up CI / CD processes with \"1-click\"",
+        "With a team, I took part in the development of a complex of services for administrating applications and managing their CI / CD processes. I took the main part in the implementation of the subsystem for accounting components and resources. As well, I started a history of the common library of React components for our front-end part."
       ]
     },
     {
@@ -193,7 +186,7 @@
       "company": {
         "name": "SberBank Technology",
         "website": "https://www.sber-tech.com",
-        "location": "Moscow, Russia"
+        "location": "Moscow"
       },
       "technologies": [
         "Java 8",
@@ -210,8 +203,8 @@
         "Teamcity"
       ],
       "description": [
-        "I was a part of the development team. Our team was involved in development of accounting service for trade acquiring.",
-        "With a cross-functional team, I took the main part in planing, analyze and implementation of tools for migrating existing data from the format of the legacy system. This work gave me a unique experience to work with people from an \"obsolete system\".",
+        "I was a part of the development team. Our team was involved in the development of accounting service for trade acquiring.",
+        "With a cross-functional team, I took the main part in planing, analyze and implementation of tools for migrating existing data from the format of the legacy system.",
         "I took a part in the development of integration solutions (API) using XML (DOM / SAX) / XSD / JSON and user interface on the XML-based framework of the bank."
       ]
     },
@@ -236,19 +229,17 @@
       "company": {
         "name": "Vimpelcom (Beeline)",
         "website": "www.veon.com",
-        "location": "Moscow, Russia"
+        "location": "Moscow"
       },
       "technologies": [
         "1C: Enterprise 7.7, 8.2",
         "MS-SQL",
         "Oracle DB",
-        "Windows Server 2003 – 2008",
-        "Java 7"
+        "Windows Server 2003 – 2008"
       ],
       "description": [
         "In expert position, I was a part of the team for the development and support of the ERP-system for organizing and planning works, as well as accounting for material resources.",
         "Took a part in the planning, development, analysis of requirements as well as testing business logic. Worked in direct dialogue with key users and business customers.",
-        "I implemented tools for asynchronous SMS notification, by implementing the SMPP-protocol specification in C# and Java. This helped to give our users more effective communication and notification about work statuses.",
         "With team support I refactored the integration procedures in the T-SQL language, increasing their performance several times and reducing the number of errors. This helped to increase the efficiency of exchange between material and financial accounting systems."
       ]
     }
@@ -257,12 +248,12 @@
     {
       "start": "2014-11",
       "end": "2019-06",
-      "description": "Tula State University; Electrification engineer; Tula, Russia"
+      "description": "Bachelor of enginiering; Tula State University, Russia"
     },
     {
       "start": "1991-09",
       "end": "2001-07",
-      "description": "Comprehensive (High) School #60; Tula, Russia"
+      "description": "High School #60; Tula, Russia"
     }
   ],
   "certification": [
