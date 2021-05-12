@@ -89,7 +89,8 @@
         "Bash"
       ],
       "description": [
-        "As a developer I was working on a high-loaded project (200 rps) to provide a set of the tools for maintaining selling offers on the bol.com web platform. This solution is heavily used by partners with accessing it by API, seller portal or by using FTP integrations"
+        "As a developer I was working on a high-loaded project (200 rps) to provide a set of the tools for maintaining selling offers on the bol.com web platform. This solution is heavily used by partners with accessing it by API, seller portal or by using FTP integrations",
+        "As a volunteer I was taking a part in organising of internal technical conference with more than 600 participants."
       ]
     },
     {
@@ -302,5 +303,8 @@
       "year": "2015",
       "description": "HTML5; Java SE"
     }
+  ],
+  "hobbies": [
+    "Reading", "Running", "Listening to music", "Playing chess", "Cooking and baking", "Photography"
   ]
 }

@@ -19,7 +19,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 
     <title>{{ name }}</title>
   </head>
@@ -58,6 +58,11 @@
             {% endif %}
           </div>
           {% endfor %}
+        </div>
+        <div class="left-cv-column-block">
+          <h5><span class="material-icons">favorite_border</span>Hobbies:</h5>
+          <p>{{ hobbies }}
+          </p>
         </div>
         <div class="left-cv-column-block">
           <h5><span class="material-icons">people_outline</span>Social links:</h5>

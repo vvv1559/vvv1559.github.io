@@ -79,6 +79,7 @@ def _build_content():
         "experience": _extract_experience(data),
         "education": _extract_cv_row(data.get('education')),
         "certification": _extract_cv_row(data.get('certification')),
+        "hobbies": ", ".join(data.get('hobbies')).lower().capitalize(),
     }
     return content
 
@@ -93,11 +94,11 @@ def _extract_social_links(content):
 
 def _get_icon(contact_type):
     if contact_type == 'LinkedIn':
-        return '/img/linked-in.png'
+        return 'img/linked-in.png'
     if contact_type == 'GitHub':
-        return '/img/git-hub.png'
+        return 'img/git-hub.png'
     if contact_type == 'HackerRank':
-        return '/img/hackerrank.png'
+        return 'img/hackerrank.png'
 
 
 def _extract_contacts(content):
