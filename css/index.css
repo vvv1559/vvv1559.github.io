@@ -17,7 +17,7 @@ body {
 }
 
 p+p {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 h1 {
@@ -116,7 +116,7 @@ label {
 }
 
 .right-cv-column-title {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .right-cv-column-content {
