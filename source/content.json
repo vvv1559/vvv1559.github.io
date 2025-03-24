@@ -3,7 +3,7 @@
   "positions": [
     "Senior Software Developer"
   ],
-  "limitations": "Require Visa Sponsorship",
+  "limitations": "",
   "contacts": [
     {
       "type": "mobile",
@@ -42,16 +42,16 @@
       "level": "Fluent"
     },
     {
-      "language": "Russian",
-      "level": "Native"
+      "language": "Dutch",
+      "level": "Intermediate"
     },
     {
-      "language": "Dutch",
-      "level": "Beginner"
+      "language": "Russian",
+      "level": "Native"
     }
   ],
   "summaries": [
-    "Professional with more then 10 years of experience.",
+    "Professional with more then 15 years of experience.",
     "Skilled to collaborate with colleagues across multiple business areas to ensure products align with requirements and expectations.",
     "Able to provide mentoring team members on best practices and technologies",
     "Communicable, with a keen responsibility sense and passion for self-education"
@@ -62,6 +62,21 @@
         {
           "title": "Software Engineer II",
           "start": "2021-09",
+          "end": "2023-03"
+        },
+        {
+          "title": "Senior Software Engineer I",
+          "start": "2023-03",
+          "end": "2023-09"
+        },
+        {
+          "title": "Engineering Manager",
+          "start": "2023-09",
+          "end": "2024-03"
+        },
+        {
+          "title": "Senior Software Engineer I",
+          "start": "2024-03",
           "end": null
         }
       ],
@@ -71,7 +86,8 @@
         "location": "Amsterdam"
       },
       "technologies": [
-        "Java 11",
+        "Java 17",
+        "Spring Boot",
         "Dropwizard",
         "Mockito",
         "JUnit",
@@ -86,8 +102,9 @@
         "Bash"
       ],
       "description": [
-        "As a developer, I was working on building the Customer support tooling API. Next to building the new features, I lead activities to enhance the solution's architecture and increase the code quality of the existing codebase.",
-        "As a most experienced Java developer, I coached teammates to improve their knowledge of tooling and best practices."
+        "I was working on the crucial part of the Booking.com delivering solutions for the company's vision of Connected trips. Together with the team of developers I've delivered a set of the services providing REST and GraphQL interfaces to allow Front-Ends and BFFs to manage Basket pre-book data.",
+        "As a Senior Engineer, I also helped my teammates with coaching, mentorship and guiding. Helping them to address the problems they had, to navigate them in technical and professional decisions, and to find the opportunities to grow personally and professionally.",
+        "During my Engineering Manager time, I was leading teams of 4-6 Software Engineers. I was responsible for the support and delivery of the largest scope within the organisation: Analytical data streaming, Written communication channels, Technical infrastructure, and Services to provide common information."
       ]
     },
     {
@@ -240,8 +257,7 @@
       ],
       "description": [
         "With a team, I took a part in the planning, support, optimization, and development of a high-loaded (500 thousand lines of logs per second, 1.5 million metrics per minute), geographically distributed complex of services, that is responsible for collecting, parsing the application's logs and building metrics based on this data. This service helps all teams of the company to watch and monitor states of applications, makes releases safer, gives tools for A/B tests monitoring and more.",
-        "I took the main part in the collection of requirements and implementation of development tools to make the development and maintenance of application in a unified way. Also, they helped to make releases of new applications faster, reduced complexity of application maintenance and helped to create another toolset for setting up CI / CD processes with \"1-click\"",
-        "With a team, I took part in the development of a complex of services for administrating applications and managing their CI / CD processes. I took the main part in the implementation of the subsystem for accounting components and resources. As well, I started a history of the common library of React components for our front-end part."
+        "I took the main part in the collection of requirements and implementation of development tools to make the development and maintenance of application in a unified way. Also, they helped to make releases of new applications faster, reduced complexity of application maintenance and helped to create another toolset for setting up CI / CD processes with \"1-click\""
       ]
     },
     {

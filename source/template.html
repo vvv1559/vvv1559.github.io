@@ -86,20 +86,23 @@
           <h3 class="highlight">Work experiences</h3>
           {% for exp_item in experience %}
           <div class="right-cv-column-block">
-            <div class="right-cv-column-title">
-              <div>
-                <h6>{{ exp_item.start }} - {{ exp_item.end }}</h6>
-                <h5>{{ exp_item.title }} </h5>
+            <div class="history-header">
+              <div class="right-cv-column-title">
+                <div>
+                  <h6>{{ exp_item.start }} - {{ exp_item.end }}</h6>
+                  <h5>{{ exp_item.title }} </h5>
+                </div>
+                <div>
+                  <h6>
+                    <a href="{{ exp_item.company.website }}" class="no-dec" target="_blank">
+                      <span class="material-icons">open_in_new</span>
+                    </a>
+                    {{ exp_item.company.name }}
+                  </h6>
+                  <h6><span class="material-icons highlight">room</span> {{ exp_item.company.location }}</h6>
+                </div>
               </div>
-              <div>
-                <h6>
-                  <a href="{{ exp_item.company.website }}" class="no-dec" target="_blank">
-                    <span class="material-icons">open_in_new</span>
-                  </a>
-                  {{ exp_item.company.name }}
-                </h6>
-                <h6><span class="material-icons highlight">room</span> {{ exp_item.company.location }}</h6>
-              </div>
+              <div class="history">{{ exp_item.history }}</div>
             </div>
             <div class="right-cv-column-content">
               {% for desc_line in exp_item.description %}

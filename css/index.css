@@ -115,8 +115,8 @@ label {
     border-top: 2px solid var(--alter-color);
 }
 
-.right-cv-column-title {
-    padding-bottom: 1rem;
+.history-header {
+    padding-bottom: 0.5rem;
 }
 
 .right-cv-column-content {
@@ -126,6 +126,7 @@ label {
 .right-cv-column-title {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0.25rem;
 }
 
 .material-icons {
@@ -150,6 +151,11 @@ a[class="no-dec"] {
     height: 32px;
     width: 32px;
     border: 1px solid var(--high-light);
+}
+
+.history {
+    font-size: 0.75rem;
+    font-style: italic;
 }
 
 @media screen and (max-width: 720px) {

@@ -145,6 +145,7 @@ def _extract_experience(content):
         result.append({
             'title': l_pos.title,
             'start': positions[0].start,
+            'history': " → ".join([pi.title for pi in positions]) if len(positions) > 1 else "",
             'end': l_pos.end,
             'company': Company(comp.get('name'), comp.get('website'), comp.get('location')),
             'technologies': ', '.join(exp_item.get('technologies')),
