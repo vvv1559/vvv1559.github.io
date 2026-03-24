@@ -1,0 +1,371 @@
+{
+  "titles": {
+    "about": "Over mij",
+    "education": "Opleiding",
+    "experience": "Werkervaring",
+    "contacts": "Contacten",
+    "hobbies": "Hobby's",
+    "social": "Sociale links",
+    "languages": "Talen"
+  },
+  "name": "Vlad Vinogradov",
+  "positions": [
+    "Senior Software Developer"
+  ],
+  "limitations": "",
+  "contacts": [
+    {
+      "type": "mobile",
+      "contact": "+31 (6) 57 47 72 18"
+    },
+    {
+      "type": "email",
+      "contact": "want.work.with.you@gmail.com"
+    },
+    {
+      "type": "skype",
+      "contact": "verwolf85"
+    },
+    {
+      "type": "location",
+      "contact": "Almere, Netherlands"
+    }
+  ],
+  "links": [
+    {
+      "type": "LinkedIn",
+      "link": "https://www.linkedin.com/in/vvv1559"
+    },
+    {
+      "type": "GitHub",
+      "link": "https://github.com/vvv1559"
+    },
+    {
+      "type": "HackerRank",
+      "link": "https://www.hackerrank.com/vvv1559"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Engels",
+      "level": "Vloeiend"
+    },
+    {
+      "language": "Nederlands",
+      "level": "Professionele werkvaardigheid"
+    },
+    {
+      "language": "Russisch",
+      "level": "Moedertaal"
+    }
+  ],
+  "summaries": [
+    "Professional met meer dan 15 jaar ervaring.",
+    "Bedreven in het samenwerken met collega's binnen diverse bedrijfsonderdelen om ervoor te zorgen dat producten aansluiten bij de eisen en verwachtingen.",
+    "In staat om teamleden te begeleiden bij best practices en technologieën.",
+    "Communicatief, met een sterk verantwoordelijkheidsgevoel en een passie voor zelfstudie."
+  ],
+  "experience": [
+    {
+      "positions": [
+        {
+          "title": "Software Engineer II",
+          "start": "2021-09",
+          "end": "2023-03"
+        },
+        {
+          "title": "Senior Software Engineer I",
+          "start": "2023-03",
+          "end": "2023-09"
+        },
+        {
+          "title": "Engineering Manager",
+          "start": "2023-09",
+          "end": "2024-03"
+        },
+        {
+          "title": "Senior Software Engineer I",
+          "start": "2024-03",
+          "end": null
+        }
+      ],
+      "company": {
+        "name": "Booking.com",
+        "website": "https://booking.com",
+        "location": "Amsterdam"
+      },
+      "technologies": [
+        "Java 17",
+        "Spring Boot",
+        "Dropwizard",
+        "Mockito",
+        "JUnit",
+        "Maven",
+        "Docker",
+        "Apache Kafka",
+        "MySQL",
+        "Google cloud platform",
+        "GitLab",
+        "Linux",
+        "kubernetes",
+        "Bash"
+      ],
+      "description": [
+        "Ik werkte aan een cruciaal onderdeel van Booking.com: het leveren van oplossingen voor de visie van het bedrijf op 'Connected Trips'. Samen met het ontwikkelaarsteam heb ik een reeks services ontwikkeld die REST- en GraphQL-interfaces bieden, waarmee front-ends en BFF's (Business Functions) de vooraf geboekte winkelmandgegevens kunnen beheren.",
+        "Als Senior Engineer heb ik mijn teamgenoten ook gecoacht, begeleid en geadviseerd. Ik hielp hen bij het oplossen van problemen, het nemen van technische en professionele beslissingen en het vinden van kansen voor persoonlijke en professionele groei.",
+        "Tijdens mijn periode als Engineering Manager gaf ik leiding aan teams van 4-6 software engineers. Ik was verantwoordelijk voor de ondersteuning en levering van de grootste scope binnen de organisatie: analytische datastreaming, schriftelijke communicatiekanalen, technische infrastructuur en services voor het verstrekken van algemene informatie."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Expert Software developer",
+          "start": "2020-07",
+          "end": "2021-08"
+        }
+      ],
+      "company": {
+        "name": "Bol.com",
+        "website": "https://bol.com",
+        "location": "Utrecht"
+      },
+      "technologies": [
+        "Java 11",
+        "Kotlin",
+        "Spring Boot",
+        "Hibernate",
+        "Mockito",
+        "JUnit",
+        "Maven",
+        "Docker",
+        "PostgreSQL",
+        "Big Query",
+        "Google cloud platform",
+        "Jenkins",
+        "GitLab",
+        "Linux",
+        "kubernetes",
+        "Bash"
+      ],
+      "description": [
+        "Als ontwikkelaar werkte ik aan een project met een hoge belasting (200 rps) om een ​​set tools te leveren voor het beheren van verkoopaanbiedingen op het bol.com-webplatform.",
+        "Als vrijwilliger hielp ik mee met de organisatie van een interne technische conferentie met meer dan 600 deelnemers."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Software developer",
+          "start": "2019-07",
+          "end": "2020-06"
+        }
+      ],
+      "company": {
+        "name": "TripActions",
+        "website": "https://tripactions.com",
+        "location": "Amsterdam"
+      },
+      "technologies": [
+        "Java 11",
+        "Spring Boot",
+        "Hibernate",
+        "Mockito",
+        "JUnit",
+        "Maven",
+        "Docker",
+        "Apache Kafka",
+        "MySql",
+        "Jenkins",
+        "Linux",
+        "Bash"
+      ],
+      "description": [
+        "Als ontwikkelaar analyseerde en ontwierp ik de architectuur van een nieuwe oplossing voor integratie met een Europese treinaanbieder. Dit hielp ons bedrijf de dekking van treinreizen voor onze klanten aanzienlijk te verbeteren. Het resultaat was een effectieve en schaalbare oplossing met de hoogste testdekking binnen het bedrijf.",
+        "Als ontwikkelaar analyseerde en implementeerde ik het framework voor de integratie van de bedrijfsinfrastructuur met HR-managementsystemen van derden. Dankzij dit framework konden mijn teamgenoten nieuwe integraties in korte tijd (een paar dagen) implementeren.",
+        "Als teamleider werkte ik aan de organisatie van de ontwikkeling binnen het team: het opstellen van de roadmap en het bepalen van prioriteiten. Daarnaast hielp ik mijn teamgenoten met problemen, vragen en het plannen van hun professionele groei."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Middle Software Developer",
+          "start": "2018-05",
+          "end": "2018-12"
+        },
+        {
+          "title": "Senior Software Developer",
+          "start": "2018-12",
+          "end": "2019-05"
+        },
+        {
+          "title": "Development Team Lead",
+          "start": "2019-05",
+          "end": "2019-07"
+        }
+      ],
+      "company": {
+        "name": "Fuga Music",
+        "website": "https://www.fuga.com",
+        "location": "Amsterdam"
+      },
+      "technologies": [
+        "Java 8",
+        "Spring Boot",
+        "Hibernate",
+        "Mockito",
+        "JUnit",
+        "Maven",
+        "Gradle",
+        "Ruby",
+        "Docker",
+        "Apache Kafka",
+        "MySql",
+        "Google BigQuery",
+        "JavaScript/React",
+        "Jenkins",
+        "Linux",
+        "Bash"
+      ],
+      "description": [
+        "Ik speelde een belangrijke rol in de planning en ontwikkeling van een zwaarbelaste service (meer dan 160 miljoen gebeurtenissen per dag), die verantwoordelijk is voor het ophalen van informatie van streamingdiensten zoals Spotify, Apple, Google, Amazon en meer.",
+        "Als ontwikkelaar analyseerde ik problemen en implementeerde ik belangrijke wijzigingen in onze verwerkingstools. De huidige oplossing helpt onze klanten om 100 keer sneller informatie te verkrijgen met 5 keer minder resourceverbruik.",
+        "Als ontwikkelaar heb ik verouderde code geherstructureerd en de verwerkingsinfrastructuur geoptimaliseerd. Deze wijzigingen hebben de verwerkingscapaciteit minstens verviervoudigd."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Software developer",
+          "start": "2016-10",
+          "end": "2018-05"
+        }
+      ],
+      "company": {
+        "name": "Yandex",
+        "website": "https://www.yandex.com",
+        "location": "Moscow"
+      },
+      "technologies": [
+        "Java 8",
+        "Spring Core",
+        "Spring MVC",
+        "Mockito",
+        "JUnit",
+        "React JS",
+        "Python",
+        "Apache ZooKeeper",
+        "Docker",
+        "MongoDB",
+        "ClickHouse",
+        "Oracle DB",
+        "Gradle",
+        "Maven",
+        "Teamcity",
+        "Linux",
+        "Bash"
+      ],
+      "description": [
+        "Samen met een team heb ik meegewerkt aan de planning, ondersteuning, optimalisatie en ontwikkeling van een complex van services met een hoge belasting (500.000 logregels per seconde, 1,5 miljoen metrics per minuut), geografisch verspreid over verschillende locaties. Dit complex is verantwoordelijk voor het verzamelen en analyseren van de applicatielogs en het genereren van metrics op basis van deze data. Deze service helpt alle teams binnen het bedrijf om de status van applicaties te bewaken en te monitoren, maakt releases veiliger, biedt tools voor het monitoren van A/B-tests en meer.",
+        "Ik heb een belangrijke rol gespeeld bij het verzamelen van requirements en de implementatie van ontwikkeltools om de ontwikkeling en het onderhoud van applicaties op een uniforme manier te laten verlopen. Deze tools hebben er ook voor gezorgd dat nieuwe applicaties sneller konden worden uitgebracht, de complexiteit van applicatieonderhoud is verminderd en er is een nieuwe set tools ontwikkeld voor het opzetten van CI/CD-processen met één klik."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Middle Engineer",
+          "start": "2016-05",
+          "end": "2016-10"
+        }
+      ],
+      "company": {
+        "name": "SberBank Technology",
+        "website": "https://www.sber-tech.com",
+        "location": "Moscow"
+      },
+      "technologies": [
+        "Java 8",
+        "Java EE",
+        "Spring Core",
+        "JUnit",
+        "Maven",
+        "Python",
+        "Bash",
+        "IBM WebSphere",
+        "Oracle Linux",
+        "Oracle DB",
+        "Jenkins",
+        "Teamcity"
+      ],
+      "description": [
+        "Ik maakte deel uit van het ontwikkelingsteam. Ons team was betrokken bij de ontwikkeling van een boekhoudservice voor handelsacquisities."
+      ]
+    },
+    {
+      "positions": [
+        {
+          "title": "Engineer-programmer",
+          "start": "2008-04",
+          "end": "2012-08"
+        },
+        {
+          "title": "Software Developer",
+          "start": "2012-08",
+          "end": "2013-04"
+        },
+        {
+          "title": "Senior Software Developer",
+          "start": "2013-04",
+          "end": "2016-05"
+        }
+      ],
+      "company": {
+        "name": "Vimpelcom (Beeline)",
+        "website": "www.veon.com",
+        "location": "Moscow"
+      },
+      "technologies": [
+        "1C: Enterprise 7.7, 8.2",
+        "MS-SQL",
+        "Oracle DB",
+        "Windows Server 2003 – 2008"
+      ],
+      "description": [
+        "In mijn rol als expert maakte ik deel uit van het team dat het ERP-systeem ontwikkelde en ondersteunde voor het organiseren en plannen van werkzaamheden, evenals voor de administratie van materiële middelen.",
+        "Met de steun van het team heb ik de integratieprocedures in de T-SQL-taal geherstructureerd, waardoor de prestaties aanzienlijk zijn verbeterd en het aantal fouten is verminderd."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "start": "2014-11",
+      "end": "2019-06",
+      "description": "Ingenieursdiploma; Staatsuniversiteit van Tula, Rusland"
+    },
+    {
+      "start": "1991-09",
+      "end": "2001-07",
+      "description": "Middelbare school nr. 60; Tula, Rusland"
+    }
+  ],
+  "certification": [
+    {
+      "year": "2017",
+      "description": "C++ White belt; The Complete React Native and Redux Course"
+    },
+    {
+      "year": "2016",
+      "description": "Algorithms and data structures; Web service development using Java (Level 1, 2); Functional programming using Haskell"
+    },
+    {
+      "year": "2015",
+      "description": "HTML5; Java SE"
+    }
+  ],
+  "hobbies": [
+    "Lezen",
+    "Fietsen",
+    "Naar muziek luisteren en dj'en",
+    "Schaak spelen",
+    "Koken en bakken"
+  ]
+}

@@ -4,7 +4,7 @@
   This page was auto-generated from the template
   You can find source code in my GitHub repository https://github.com/vvv1559/vvv1559.github.io 
 -->
-<html lang="en">
+<html lang="{{ language }}">
 
   <head>
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
 
     <title>{{ name }}</title>
   </head>
@@ -33,26 +33,40 @@
           <h5>{{ position }}</h5>
           {% endfor %}
           <h6><i>{{ limitations }}</i></h6>
+          <div class="language-switcher">
+            <span class="material-icons">language</span> 
+            {% for lang in supported_languages %}
+            {% if lang == 'en' %}
+              <a href="/" class="no-dec">{{ lang }}</a>
+            {% else %}
+              <a href="/{{ lang }}" class="no-dec">{{ lang }}</a>
+            {% endif %}
+              {% if not loop.last %}
+              |
+              {% endif %}
+            {% endfor %}
+            <br>
+            <a href="/static/Vlad Vinogradov {{ language }}.pdf" class="no-dec"><span class="material-icons">picture_as_pdf</span>PDF</a>
+          </div>
         </div>
         <div class="left-cv-column-block">
-          <h5><span class="material-icons">person_outline</span>About</h5>
+          <h5><span class="material-icons">person_outline</span>{{ titles.about }}</h5>
           {% for summary in summaries %}
           <p>{{ summary }}</p>
           {% endfor %}
         </div>
         <div class="left-cv-column-block">
-          <h5><span class="material-icons">local_library</span>Education</h5>
+          <h5><span class="material-icons">local_library</span>{{ titles.education }}</h5>
           {% for ed_row in education %}
           <div><label>{{ ed_row.period }}: </label>{{ ed_row.description }}</div>
           {% endfor %}
         </div>
         <div class="left-cv-column-block">
-          <h5><span class="material-icons">phone_in_talk</span>Contacts:</h5>
+          <h5><span class="material-icons">phone_in_talk</span>{{ titles.contacts }}</h5>
           {% for contact in contacts %}
           <div>
-            <label>{{ contact.label }}: </label>
             {% if contact.link %}
-            <a href="{{ contact.link }}" target="_blank">{{ contact.data }}</a>
+            <a href="{{ contact.link }}">{{ contact.data }}</a>
             {% else %}
             {{ contact.data }}
             {% endif %}
@@ -60,30 +74,29 @@
           {% endfor %}
         </div>
         <div class="left-cv-column-block">
-          <h5><span class="material-icons">favorite_border</span>Hobbies:</h5>
-          <p>{{ hobbies }}
-          </p>
+          <h5><span class="material-icons">favorite_border</span>{{ titles.hobbies }}</h5>
+          <p>{{ hobbies }}</p>
         </div>
         <div class="left-cv-column-block">
-          <h5><span class="material-icons">people_outline</span>Social links:</h5>
+          <h5><span class="material-icons">people_outline</span>{{ titles.social }}</h5>
           {% for link in links %}
           {% if link.icon %}
-          <a href="{{ link.link }}" target="_blank"><img src="{{ link.icon }}" alt="{{ link.label }}" class="icon"></a>
+          <a href="{{ link.link }}" target="_blank"><img src="/{{ link.icon }}" alt="{{ link.label }}" class="icon"></a>
           {% else %}
           <a href="{{ link.link }}" target="_blank">{{ link.label }}</a>
           {% endif %}
           {% endfor %}
         </div>
         <div class="left-cv-column-block">
-          <h5><span class="material-icons">language</span>Languages:</h5>
-          {% for language in languages %}
-          <div>{{ language.language }} ({{ language.level }})</div>
+          <h5><span class="material-icons">language</span>{{ titles.languages }}</h5>
+          {% for lang in languages %}
+          <div><label>{{ lang.language }}: </label>{{ lang.level }}</div>
           {% endfor %}
         </div>
       </div>
       <div class="right-cv-column">
         <div class="right-cv-column-section">
-          <h3 class="highlight">Work experiences</h3>
+          <h3 class="highlight">{{ titles.experience }}</h3>
           {% for exp_item in experience %}
           <div class="right-cv-column-block">
             <div class="history-header">
@@ -127,7 +140,6 @@
 
       gtag('config', 'UA-135205191-1');
     </script>
-    </div>
   </body>
 
 </html>

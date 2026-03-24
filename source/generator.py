@@ -1,8 +1,10 @@
 import datetime
+import locale
 import json
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML, CSS
 
 
 def _read_json(f_name):
@@ -13,9 +15,19 @@ def _read_json(f_name):
 
 _CUR_DIR_ = Path(__file__).parent.resolve()
 _ROOT_DIR_ = _CUR_DIR_.parent.resolve()
+_STATIC_DIR_ = _ROOT_DIR_.joinpath('static')
 _TEMPLATE_FILE_ = 'template.html'
-_CONTENT_FILE_ = _CUR_DIR_.joinpath('content.json')
 _LABELS_FILE_ = _read_json(_CUR_DIR_.joinpath('labels.json'))
+_SUPPORTED_LANGUAGES_ = [{'code': 'en', 'name': 'English', 'locale': 'en_US'}, {'code': 'nl', 'name': 'Nederlands', 'locale': 'nl_NL'}]  # Add your language codes
+
+
+def _get_content_file(language):
+    """Get the content file path for a specific language."""
+    return _CUR_DIR_.joinpath(f'content.{language}.json')
+
+def _get_lang_codes():
+    """Get a list of supported language codes."""
+    return [lang['code'] for lang in _SUPPORTED_LANGUAGES_]
 
 
 def _format_date(date):
@@ -48,7 +60,7 @@ class Position:
         if e_date:
             self.end = _format_date(e_date)
         else:
-            self.end = 'Present'
+            self.end = ''
 
         self.title = title
 
@@ -65,10 +77,20 @@ def _load_template():
     return env.get_template(_TEMPLATE_FILE_)
 
 
-def _build_content():
-    data = _read_json(_CONTENT_FILE_)
+def _build_content(lang):
+    """Build content for a specific language."""
+    print(f"Building content for language: {lang}")
+    locale.setlocale(locale.LC_TIME, lang['locale'])
+    language = lang['code']
+    content_file = _get_content_file(language)
+    
+    if not content_file.exists():
+        raise FileNotFoundError(f"Content file not found for language: {language}")
+    
+    data = _read_json(content_file)
 
     content = {
+        "titles": data.get('titles'),
         "name": data.get('name'),
         "positions": data.get('positions'),
         "limitations": data.get('limitations'),
@@ -76,10 +98,12 @@ def _build_content():
         "contacts": _extract_contacts(data),
         "links": _extract_social_links(data),
         "languages": data.get('languages'),
-        "experience": _extract_experience(data),
+        "experience": _extract_experience(data, lang),
         "education": _extract_cv_row(data.get('education')),
         "certification": _extract_cv_row(data.get('certification')),
         "hobbies": ", ".join(data.get('hobbies')).lower().capitalize(),
+        "language": language,
+        "supported_languages": _get_lang_codes()
     }
     return content
 
@@ -124,8 +148,7 @@ def _extract_contacts(content):
     return contacts
 
 
-
-def _extract_experience(content):
+def _extract_experience(content, lang):
     result = []
     for exp_item in content.get('experience'):
         positions = []
@@ -154,29 +177,6 @@ def _extract_experience(content):
     return result
 
 
-def _to_month(date):
-    return date.year * 12 + date.month
-
-
-def _format_duration(delta_month):
-    years = int(delta_month / 12)
-    delta_month = delta_month % 12
-    m_format = None
-    if delta_month == 0:
-        m_format = ""
-    elif delta_month == 1:
-        m_format = str(delta_month) + " mo"
-    else:
-        m_format = str(delta_month) + " mos"
-
-    if years == 1:
-        return "1 yr " + m_format
-    if years > 0:
-        return str(years) + " yrs " + m_format
-
-    return m_format
-
-
 def _extract_cv_row(data):
     result = []
     for item in data:
@@ -198,15 +198,53 @@ def _extract_cv_row(data):
     return result
 
 
-if __name__ == "__main__":
-    print("Preparing data")
+def _generate_for_language(lang):
+    """Generate HTML and PDF for a specific language in a separate folder."""
+    language = lang['code']
+    print(f"Preparing data for language: {language}")
     template = _load_template()
-    content = _build_content()
+    content = _build_content(lang)
 
-    print("Rendering")
+    print(f"Rendering for {language}")
     rendered_content = template.render(content)
 
-    print("Saving html")
-    html_file = _ROOT_DIR_.joinpath('index.html')
+    print(f"Saving HTML and PDF for {language}")
+    
+    # Create language-specific folder in root directory
+    if language == 'en':
+        # English goes to root as index.html
+        html_file = _ROOT_DIR_.joinpath('index.html')
+    else:
+        # Other languages go to folders: /nl/, /ru/, etc.
+        lang_folder = _ROOT_DIR_.joinpath(language)
+        lang_folder.mkdir(exist_ok=True)
+        html_file = lang_folder.joinpath('index.html')
+    
+    # Save HTML
     with open(html_file, "w") as fh:
         fh.write(rendered_content)
+    
+    print(f"HTML saved to: {html_file}")
+    
+    # Create static folder if it doesn't exist
+    _STATIC_DIR_.mkdir(exist_ok=True)
+    
+    # Save PDF to static folder with naming convention
+    pdf_file = _STATIC_DIR_.joinpath(f'Vlad Vinogradov {language}.pdf')
+    
+    try:
+        HTML(string=rendered_content, base_url=_ROOT_DIR_).write_pdf(pdf_file)
+        print(f"PDF saved to: {pdf_file}")
+    except Exception as e:
+        print(f"Error generating PDF for {language}: {e}")
+
+
+if __name__ == "__main__":
+    # Generate HTML and PDF for all supported languages
+    for lang in _SUPPORTED_LANGUAGES_:
+        try:
+            _generate_for_language(lang)
+        except FileNotFoundError as e:
+            print(f"Warning: {e}")
+    
+    print("Done!")
