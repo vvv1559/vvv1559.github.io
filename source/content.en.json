@@ -95,23 +95,27 @@
         "location": "Amsterdam"
       },
       "technologies": [
-        "Java 17",
+        "Java 21",
         "Spring Boot",
-        "Dropwizard",
         "Mockito",
         "JUnit",
         "Maven",
         "Docker",
+        "NodeJS",
+        "ReactJS",
+        "TypeScript",
         "Apache Kafka",
         "MySQL",
+        "CocroachDB",
         "Google cloud platform",
+        "AWS",
         "GitLab",
         "Linux",
         "kubernetes",
         "Bash"
       ],
       "description": [
-        "I was working on the crucial part of the Booking.com delivering solutions for the company's vision of Connected trips. Together with the team of developers I've delivered a set of the services providing REST and GraphQL interfaces to allow Front-Ends and BFFs to manage Basket pre-book data.",
+        "As a Senior Engineer, I was working on the crucial part of the Booking.com delivering solutions for the company's vision of Connected trips. Together with the team of developers I've delivered a set of the services providing REST and GraphQL interfaces to allow Front-Ends and BFFs to manage Basket pre-book data. Next to it, I've managed to migrate these services to use SpringBoot to follow the company's technology objectives. I also managed to introduce ORM (Spring Data), Cockroach DB schema versioning (FlyWay), E2E testing (Node JS), and Backoffice UI (NextJS + Typescript) leading to the team having more robust and controlled deployment. As well product and tech people to have a view to the data to enable smoother debugging experience.",
         "As a Senior Engineer, I also helped my teammates with coaching, mentorship and guiding. Helping them to address the problems they had, to navigate them in technical and professional decisions, and to find the opportunities to grow personally and professionally.",
         "During my Engineering Manager time, I was leading teams of 4-6 Software Engineers. I was responsible for the support and delivery of the largest scope within the organisation: Analytical data streaming, Written communication channels, Technical infrastructure, and Services to provide common information."
       ]
